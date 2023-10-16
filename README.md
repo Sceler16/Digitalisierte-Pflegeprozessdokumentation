@@ -5,3 +5,5 @@ Die Pflege ist die größte Berufsgruppe im Gesundheitswesen in Deutschland. Die
 Mein Projekt befasst sich mit der Digitalisierung der Pflegeprozessdokumentation.
 
 Grundsätzlich ist die Anforderung in diesem Bereich aber den Pflegeprozess vollumfänglich digital abzubilden und die Dokumentation zu vereinfachen und zu beschleunigen, außerdem erhofft man sich eine Verbesserung und mehr Rechtssicherheit. 
+
+Hier ist ein neuer Kommentar by Alicja
