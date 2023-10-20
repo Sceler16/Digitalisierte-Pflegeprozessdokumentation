@@ -1,29 +1,19 @@
-exports.celsiusToFahrenheit = function (x){
- return x*(9/5)
+exports.celsiusToFahrenheit = function (celsius) {
+    return celsius * (9/5) + 32;
 }
 
-exports.fahrenheitToCelcius = function (fahrenheit){
- if (true) {
-    return (fahrenheit-32)*(5/1)
- }   
+exports.fahrenheitToCelsius = function (fahrenheit) {
+    return (fahrenheit - 32) * (5/9);
 }
 
-exports.getGreetingDependOnTime =  function (myDate) {
-    let timeBegin = '06:00';
-    let timeEnd = '22:00';
-    const dateBegin = new Date('2020-01-01 ' + timeBegin);
-    const dateEnd = new Date('2020-01-01 ' + timeEnd);
-    const dateCurrent = new Date('2020-01-01 ' + myDate.getHours() + ":" + myDate.getMinutes());
+exports.getGreetingDependOnTime = function (myDate) {
+    const timeBegin = 6;
+    const timeEnd = 22;
+    const currentHour = myDate.getHours();
 
-    if (dateBegin.getTime() < dateCurrent.getTime()) {
-        if (dateCurrent.getTime() < dateEnd.getTime()) {
-            return "Guten Morgen"
-        }
-    }
-    else if (dateCurrent.getTime() > dateEnd.getTime() && dateBegin.getTime() > dateCurrent.getTime()) 
-
-
-    {
-        return "Gute Nacht"
+    if (currentHour >= timeBegin && currentHour < timeEnd) {
+        return "Guten Morgen";
+    } else {
+        return "Gute Nacht";
     }
 }
